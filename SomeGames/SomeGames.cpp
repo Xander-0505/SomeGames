@@ -92,35 +92,25 @@ int main()
 
     std::cin >> name;
 
-    std::cout << "welome " << name << " lets play some games " << "\n";
+    std::cout << "welcome " << name << ", lets play some games " << "\n";
 
-    std::cout << "Please pick from the following five " << "\n";
+    std::cout << "Please pick from the following five: " << "\n";
 
     std::cout << "1. scrabble " << "\n";
 
-    int gameOne = 1;
-
-    std::cout << "2. rock, paper, scissors " << "\n";
-
-    int gameTwo = 2;
+    std::cout << "2. rock, paper, scissors " << "\n";;
 
     std::cout << "3. dice rolling " << "\n";
 
-    int gameThree = 3;
-
     std::cout << "4. hangman " << "\n";
 
-    int gameFour = 4;
-
     std::cout << "5. surprise" << "\n";
-
-    int gameFive = 5;
 
     int whichGame;
 
     cin >> whichGame;
 
-    if (whichGame = gameOne)
+    if (whichGame == 1)
     {
         std::cout << "Enter a word to determine points:\n" << endl;
 
@@ -134,11 +124,13 @@ int main()
 
         std::cout << "your total points is: " << totalPoints << "\n";
 
+        return 0;
+
     }
 
     system("cls");
 
-    if (whichGame = gameTwo)
+    if (whichGame == 2)
     {
 
         string player1Choice, player2Choice;
@@ -162,12 +154,13 @@ int main()
         string result = Winner(player1Choice, player2Choice);
         cout << result << endl;
 
+        return 0;
 
     }
 
     system("Cls");
 
-    if (whichGame = gameThree)
+    if (whichGame == 3)
     {
         srand(static_cast<unsigned int>(time(0)));
 
@@ -188,10 +181,11 @@ int main()
 
         std::cout << "\nSnake eyes achieved after " << counter << " rolls!" << endl;
 
+        return 0;
     }
     system("cls");
 
-    if (whichGame = gameFour)
+    if (whichGame == 4)
     {
         string player1Answer;
 
@@ -244,6 +238,7 @@ int main()
 
         std::cout << "You've guessed the word right! :) It was: " << player1Answer << endl;
 
+        return 0;
     }
     system("cls");
 
